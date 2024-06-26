@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admission.css">
+</head>
+
+<body>
+    <section id="admission">
+        <h2>Admission Form</h2>
+        <form action="submit.php" method="POST">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <label class="gender-label" for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label class="gender-label" for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <br><br>
+
+
+            <label for="grade">Grade Applying For:</label>
+            <select id="grade" name="grade" required>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <!-- Add more options for different grades -->
+            </select><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="parent_name">Father's Name:</label>
+            <input type="text" id="parent_name" name="parent_name" required><br><br>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact_parent" name="contact" pattern="[0-9]{10}" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="documents">Previous Class Result:</label>
+            <input type="file" id="documents" name="documents" accept=".pdf, .doc, .docx" required><br><br>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <!-- ... -->
+    </section>
+    <br>
+    <section id="back-to-main">
+        <a href="index.html" class="back-button">Back to main Page</a>
+    </section>
+    
+</body>
+
+</html>

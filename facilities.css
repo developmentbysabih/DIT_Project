@@ -1,0 +1,122 @@
+/* Reset default browser styles */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply a background color and center content */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Style the headings */
+h1 {
+    color: #333;
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #333;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Center align the h2 headings */
+}
+
+/* Style the paragraph text */
+p {
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Style the images container */
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the images */
+img {
+    width: 48%; /* Each image occupies 48% width with 2% space in between */
+    height: auto;
+}
+
+/* Style the image captions */
+img::after {
+    content: attr(alt);
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Add a border between sections */
+h2:not(:first-of-type) {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Style links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Style links on hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Apply additional styling to specific sections */
+h2:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    img {
+        width: 100%; /* Images occupy full width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+.button-container {
+    margin: 30px 0 40px 0;
+    text-align: center;
+}
+
+/* Style the back button */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5a802;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style the back button on hover */
+.back-button:hover {
+  background-color: #a67201;
+  text-decoration: none;
+}
